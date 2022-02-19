@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { ChatBody } from "./ChatBody";
+import { ChatForm } from "./ChatForm";
+import { addMessage, deleteMessage } from "./REDUX/chatReducer";
 
-function App() {
+
+function App({state, dispatch}) {
+  const addNewMessage = (inputValue) => {
+    if(inputValue){
+      const newMessage = {
+        id: Math.random().toString(30).substring(1,8),
+        text: inputValue
+      }
+      dispatch(addMessage(newMessage))
+    }
+  }
+  const removeMessage = (message) => {
+    dispatch(deleteMessage(message))
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ChatBody state={state} removeMessage={removeMessage}/>
+      <ChatForm addNewMessage={addNewMessage} />
     </div>
   );
 }
