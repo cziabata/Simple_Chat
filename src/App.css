@@ -5,7 +5,58 @@
   background: #0d0d0d;
   color: #d3d3d3;
 }
+
+/* Chat body styles */
 .chatBody {
   flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 35px 24px;
+}
+.message_flexEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+.message {
+  display: inline-flex;
+  padding: 8px 15px;
+  margin-bottom: 17px;
+  height: 50px;
+  border-radius: 15px;
+  background: #252525;
+  cursor: pointer;
+}
+.message_text {
+  margin-right: 30px;
+}
+.date {
+  margin-top: 5px;
+  color: #666666;
+  font-size: 10px;
+  float: right;
+}
+
+/*Chat form styles */
+.form {
+  padding: 10px;
+  display: flex;
+}
+.input {
+  padding: 0 15px;
+  height: 75px;
+  width: 95%;
+  background: #252525;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  color: white;
+  font-size: 18px;
+}
+.button {
+  height: 75px;
+  width: 75px;
+  background: #252525;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
 }
 
