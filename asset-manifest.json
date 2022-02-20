@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Simple_Chat/static/css/main.4620c17c.css",
+    "main.js": "/Simple_Chat/static/js/main.75f185ac.js",
+    "static/media/send_message_icon.svg": "/Simple_Chat/static/media/send_message_icon.beaf4db6440bc16f211597c6c76b2645.svg",
+    "index.html": "/Simple_Chat/index.html",
+    "main.4620c17c.css.map": "/Simple_Chat/static/css/main.4620c17c.css.map",
+    "main.75f185ac.js.map": "/Simple_Chat/static/js/main.75f185ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4620c17c.css",
+    "static/js/main.75f185ac.js"
+  ]
+}
